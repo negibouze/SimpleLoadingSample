@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="SimpleLoadingSample" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="8Wj-rJ-lR4"/>
+                <outlet property="indicator" destination="9RN-DZ-Bba" id="RZn-x9-1hk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-DZ-Bba">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5秒くらいで消えます。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-ZB-nze">
+                    <rect key="frame" x="200" y="219" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DHw-xq-54f"/>
+                        <constraint firstAttribute="width" constant="200" id="Ruy-yn-yIJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9RN-DZ-Bba" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BRU-lh-OME"/>
+                <constraint firstItem="9RN-DZ-Bba" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DO2-pB-7ZY"/>
+                <constraint firstItem="IJa-ZB-nze" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="E8O-OA-3IO"/>
+                <constraint firstItem="9RN-DZ-Bba" firstAttribute="top" secondItem="IJa-ZB-nze" secondAttribute="bottom" constant="50" id="mY7-wj-MDE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+</document>
